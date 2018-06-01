@@ -11,7 +11,6 @@ body {
     height: auto;
     background: white;
     margin: 0 auto;
-    text-align: center;
 }
 /* le header et ses caractéristique */
 header {
@@ -21,8 +20,13 @@ header {
     text-align: center;
     padding-top: 50px;
     padding-bottom: 70px;
-    padding-left: 20px;
+    padding-left: 40px;
     padding-right: 20px;
+}
+header h1 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 3em;
 }
 
 header h2 {
@@ -33,11 +37,13 @@ header h2 {
 header p {
     float: right;
     text-align: right;
+    display: block;
 }
 ul li {
     display: inline-block;
     text-align: center;
     list-style-type: none;
+    font-family: 'Playfair Display', serif;
 
 }
 /* les deux grandes div */
@@ -47,7 +53,9 @@ div {
     background: white;
     display: block;
     margin: 0 auto;
-    min-height: 50%;
+}
+div p {
+    font-family: 'Playfair Display', serif;
 }
 
 /* sous div */
@@ -55,8 +63,8 @@ div {
     width: 340px;
     height: 340px;
     float: left;
-    /* font-size: 0.8em; */
-    text-align: left;
+    text-justify: left;
+    font-size: 1em; /*  taille du texte */
     display: block;
     padding: 30px;/* pour décaler le texte du bord */
 }
@@ -77,11 +85,14 @@ div {
     width: 340px;
     height: 340px;
     float: right;
-    /* font-size: 0.8em; */
     display: block;
     margin: 0 auto;
-    text-align: left;
+    text-justify: left;
+    font-size: 1em; /*  taille du texte */
     padding: 30px;/* pour décaler le texte du bord */
+}
+h2 {
+    border-bottom: 1px solid black;
 }
 /* pour remettre le flux */
 .clear {
@@ -89,6 +100,11 @@ div {
 }
 .clearfix {
     overflow: auto;
+}
+.fond_noir {
+    width: 150px;
+    background: black;
+    color: white;
 }
 .image {
     width: 400px;
@@ -105,6 +121,12 @@ div {
 hr {
     width: 200px;
 }
+a {
+    text-decoration: none;
+}
+a:link {
+    color: black;
+}
 footer {
     width: 600px;
     height: auto;
@@ -113,4 +135,8 @@ footer {
     display: block;
     padding-top:90px;
     padding-bottom: 30px;
+    text-align: center;
+}
+footer h1 {
+   font-size: 3em; 
 }
